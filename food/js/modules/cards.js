@@ -42,7 +42,7 @@ function cards() {
         }
     }
 
-    getResource('https://taras-polishchuk.github.io/menu')
+    getResource('https://taras-polishchuk.github.io/food/menu')
         .then(data => {
             data.forEach(({img, altimg, title, descr, price}) => {
                 new MenuCard(img, altimg, title, descr, price, '.menu .container').render();
